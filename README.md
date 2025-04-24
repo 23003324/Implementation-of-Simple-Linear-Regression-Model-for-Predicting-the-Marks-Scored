@@ -8,32 +8,17 @@ To write a program to predict the marks scored by a student using the simple lin
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1.Import necessary libraries (pandas, numpy, matplotlib, sklearn) for data manipulation, visualization, and linear regression.
+1.Load necessary libraries like numpy, pandas, and StandardScaler for scaling features and target variables.
 
+2.Implement a linear_regression function that uses gradient descent to minimize the cost function and compute optimal model parameters (theta).
 
+3.Read the dataset from a CSV file, extract features (X) and target variable (y), and convert them to numeric types.
 
+4.Scale both the feature matrix (X1) and target variable (y) using StandardScaler to improve gradient descent performance.
 
-2.Load the dataset (student_scores.csv) using pandas, then separate the features (X) and target variable (Y), where X represents hours studied and Y represents scores.
+5.Call the linear_regression function with the scaled features and target to compute the model parameters (theta).
 
-3. Split the data into training and testing sets using train_test_split with a 2/3 training and 1/3 testing ratio.
-
-
-
-
-
-4.Initialize a LinearRegression model, train it using the training data (X_train, Y_train), and make predictions on the test data (Y_pred).
-
-
-5.Calculate the model's performance using:
-
-Mean Squared Error (MSE)
-
-Mean Absolute Error (MAE)
-
-Root Mean Squared Error (RMSE)
-
-
-6.Plot the training set and test set results with scatter plots, and overlay the regression line to show the model's fit on both the training and testing data.
+6.Scale new data using the same scaler, apply the model parameters (theta), and inverse scale the prediction to get the final result.
 ## Program:
 ```
 /*
