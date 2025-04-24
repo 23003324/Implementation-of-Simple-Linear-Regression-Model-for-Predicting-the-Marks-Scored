@@ -9,9 +9,14 @@ To write a program to predict the marks scored by a student using the simple lin
 
 ## Algorithm
 1.Import necessary libraries (pandas, numpy, matplotlib, sklearn) for data manipulation, visualization, and linear regression.
+
+
 2.Load the dataset (student_scores.csv) using pandas, then separate the features (X) and target variable (Y), where X represents hours studied and Y represents scores.
 
+
+
 3. Split the data into training and testing sets using train_test_split with a 2/3 training and 1/3 testing ratio.
+
 
    
 4.Initialize a LinearRegression model, train it using the training data (X_train, Y_train), and make predictions on the test data (Y_pred).
@@ -24,6 +29,7 @@ Mean Squared Error (MSE)
 Mean Absolute Error (MAE)
 
 Root Mean Squared Error (RMSE)
+
 
 6.Plot the training set and test set results with scatter plots, and overlay the regression line to show the model's fit on both the training and testing data.
 ## Program:
